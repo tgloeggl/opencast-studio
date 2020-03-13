@@ -135,7 +135,6 @@ export default function SaveCreation(props) {
         <FormField label={t('save-creation-label-title')}>
           <Text sx={{
             fontWeight: 100,
-            fontSize: 'smaller',
             paddingBottom: '4px'
           }}>{t('save-creation-label-title-text')}</Text>
           <Input
@@ -150,7 +149,6 @@ export default function SaveCreation(props) {
         <FormField label={t('save-creation-label-presenter')}>
           <Text sx={{
             fontWeight: 100,
-            fontSize: 'smaller',
             paddingBottom: '4px'
           }}>{t('save-creation-label-presenter-text')}</Text>
           <Input
