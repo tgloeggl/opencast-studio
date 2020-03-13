@@ -3,7 +3,7 @@
   "message-conn-failed": "The internet connection failed or you are missing necessary permissions.",
   "message-login-failed": "Login failed. Please check your password.",
   "message-server-unreachable": "Server unreachable: Check your internet connection and the server URL. Also check if your Opencast allows access via Studio.",
-  "message-upload-complete": "Upload complete!",
+  "message-upload-complete": "Done. Your recording will be processed and published to <1>{{link}}</1> according to metadata provided (department, course catalogue number). If you want to distribute recordings yourself, please download media and upload them to your Polybox.",
   "notification-title": "Notice:",
   "cancel-button-title": "Cancel",
   "pause-button-title": "Pause recording",

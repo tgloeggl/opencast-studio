@@ -120,7 +120,13 @@ export default function SaveCreation(props) {
         }}>
           <FontAwesomeIcon icon={faCheckCircle} size="4x" />
         </div>
-        <Text sx={{ textAlign: 'center' }}>{t('message-upload-complete')}</Text>
+        <Trans i18nKey="message-upload-complete">
+          Done. Your recording will be processed and published to
+          <a href="https://video.ethz.ch/lectures.html">{{link: 'video.ethz.ch/lectures.html'}}</a> according to metadata provided
+          (department, course catalogue number). If you want to dist ribute
+          recordings yourself, please download media and upload them to your
+          Polybox.
+        </Trans>
       </React.Fragment>
     );
   } else {

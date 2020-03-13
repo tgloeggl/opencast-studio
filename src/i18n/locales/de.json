@@ -3,7 +3,7 @@
   "message-conn-failed": "Probleme mit der Internet-Verbindung oder fehlende Berechtigungen.",
   "message-login-failed": "Login fehlgeschlagen. Bitte Passwort überprüfen.",
   "message-server-unreachable": "Der Server ist nicht erreichbar: Überprüfen Sie Ihre Internet-Verbindung und die Server-URL. Prüfen Sie auch ob Ihr Opencast Zugriff durch Studio erlaubt hat.",
-  "message-upload-complete": "Erfolgreich hochgeladen!",
+  "message-upload-complete": "Geschafft. Ihre Aufzeichnung wird verarbeitet und gemäss Metadaten (Departement, VVZ Nummer) unter <1>{{link}}</1> publiziert. Sollten Sie die Aufzeichnung selbst via Polybox bereitstellen wollen, laden Sie diese bitte auf Ihren Rechner und dann in die Polybox.",
   "notification-title": "Hinweis:",
   "cancel-button-title": "Abbrechen",
   "pause-button-title": "Aufzeichnung pausieren",
