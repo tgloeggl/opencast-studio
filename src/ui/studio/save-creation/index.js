@@ -133,6 +133,11 @@ export default function SaveCreation(props) {
     uploadBox = (
       <React.Fragment>
         <FormField label={t('save-creation-label-title')}>
+          <Text sx={{
+            fontWeight: 100,
+            fontSize: 'smaller',
+            paddingBottom: '4px'
+          }}>{t('save-creation-label-title-text')}</Text>
           <Input
             name="title"
             autoComplete="off"
@@ -143,6 +148,11 @@ export default function SaveCreation(props) {
         </FormField>
 
         <FormField label={t('save-creation-label-presenter')}>
+          <Text sx={{
+            fontWeight: 100,
+            fontSize: 'smaller',
+            paddingBottom: '4px'
+          }}>{t('save-creation-label-presenter-text')}</Text>
           <Input
             name="presenter"
             autoComplete="off"
