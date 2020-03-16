@@ -444,6 +444,34 @@ const aclForRole = role => {
           </Apply>
         </Condition>
       </Rule>
+      <Rule RuleId="ROLE_GROUP_NETHZ_read_Permit" Effect="Permit">
+        <Target>
+          <Actions>
+            <Action>
+              <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">read</AttributeValue><ActionAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string"/></ActionMatch>
+            </Action>
+          </Actions>
+        </Target>
+        <Condition>
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-is-in">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">ROLE_GROUP_NETHZ</AttributeValue><SubjectAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:2.0:subject:role" DataType="http://www.w3.org/2001/XMLSchema#string"/></Apply>
+        </Condition>
+      </Rule>
+      <Rule RuleId="ROLE_GROUP_NETHZ_write_Permit" Effect="Permit">
+        <Target>
+          <Actions>
+            <Action>
+              <ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">write</AttributeValue><ActionAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string"/></ActionMatch>
+            </Action>
+          </Actions>
+        </Target>
+        <Condition>
+          <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-is-in">
+            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">ROLE_GROUP_NETHZ</AttributeValue><SubjectAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:2.0:subject:role" DataType="http://www.w3.org/2001/XMLSchema#string"/></Apply>
+        </Condition>
+      </Rule>
     </Policy>
   `;
 }
