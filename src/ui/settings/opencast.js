@@ -103,72 +103,7 @@ function OpencastSettings({ settingsManager }) {
   };
   const icon = icons[status];
 
-  return (
-    <SettingsSection title={t('upload-settings-modal-header')}>
-      <Box>
-        {error && <Notification isDanger>{error}</Notification>}
-
-        <form onSubmit={handleSubmit(onSubmit)}>
-          { showServerUrl && <Input
-            errors={errors}
-            label={t('upload-settings-label-server-url')}
-            name="serverUrl"
-            register={register}
-            validate={value => {
-              try {
-                const url = new URL(value);
-                return (url.protocol === 'https:' || url.protocol === 'http:')
-                  || t('upload-settings-invalid-url-http-start');
-              } catch (e) {
-                let err = t('upload-settings-invalid-url');
-                if (!value.startsWith('https://') && !value.startsWith('http://')) {
-                  err += " " + t('upload-settings-invalid-url-http-start');
-                }
-                return err;
-              }
-            }}
-            required
-          /> }
-
-          { showUsername && <Input
-            errors={errors}
-            label={t('upload-settings-label-username')}
-            name="loginName"
-            register={register}
-            required
-          /> }
-
-          { showPassword && <Input
-            errors={errors}
-            label={t('upload-settings-label-password')}
-            name="loginPassword"
-            register={register}
-            required
-            type="password"
-          /> }
-
-          <footer sx={{ mt: 4 }}>
-            <Button sx={{ verticalAlign: 'middle' }}>
-              {t('upload-settings-button-store')}
-            </Button>
-            { icon && <FontAwesomeIcon
-              icon={icon}
-              sx={{ ml: '10px', fontSize: '30px', verticalAlign: 'middle' }}
-              spin={status === 'testing'}
-            /> }
-            { hasRecording && status === 'saved' && (
-              <Link
-                to={{ pathname: "/", search: location.search }}
-                sx={{ ml: 3, variant: 'styles.a' }}
-              >
-                {t('settings-back-to-recording')}
-              </Link>
-            )}
-          </footer>
-        </form>
-      </Box>
-    </SettingsSection>
-  );
+  return '';
 }
 
 export default OpencastSettings;

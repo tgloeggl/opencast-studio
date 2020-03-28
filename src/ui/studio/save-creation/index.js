@@ -204,7 +204,7 @@ export default function SaveCreation(props) {
           >{t('save-creation-subsection-title-upload')}</Styled.h2>
 
           <div sx={{ margin: 'auto' }}>
-            { uploadBox }
+            {t('save-creation-subsection-content-upload')}
           </div>
         </div>
 
